@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/com.css">
+  <title>Sistema Cero Vientre</title>
+  <style type="text/css">
+    body {
+      color: black;
+      background-color: white;
+    }
+    .aviso-topo {
+      background-color: red;
+      color: white; /* Alterado para vermelho */
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .btn-roxo {
+      background-color: #8a1eff;
+      color: white;
+      border: 2px solid #8a1eff;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-roxo:hover {
+      background-color: #5d00b3;
+      border-color: #5d00b3;
+    }
+  </style>
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1171118557124326');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1171118557124326&ev=PageView&noscript=1"
+  /></noscript>
+</head>
+<body>
+  <div class="aviso-topo">
+  <p>VEA HASTA EL FINAL, ESTA PRESENTACIÓN SERÁ RETIRADA EL DÍA... <span id="dataAtual"></span>.</p>
+</div>
+<script>
+  // Função para formatar a data no formato DD/MM/AAAA
+  function formatarData(data) {
+    var dia = data.getDate();
+    var mes = data.getMonth() + 1; // Os meses em JavaScript são indexados em 0, por isso somamos 1
+    var ano = data.getFullYear();
+    // Adiciona um zero à esquerda se o dia ou mês for menor que 10
+    if (dia < 10) dia = "0" + dia;
+    if (mes < 10) mes = "0" + mes;
+    return dia + "/" + mes + "/" + ano;
+  }
+
+  // Função para exibir a data atual
+  function exibirDataAtual() {
+    var dataAtual = new Date();
+    var dataFormatada = formatarData(dataAtual);
+    // Atualiza o conteúdo do elemento HTML com a data atual formatada
+    document.getElementById("dataAtual").innerText = dataFormatada;
+  }
+
+  // Chama a função para exibir a data atual assim que a página carregar
+  window.onload = exibirDataAtual;
+</script>
+    </script>
+  </div>
+  <header class="py-4">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3 class="my-4"><b><p>¿POR QUÉ ESTE <span style="color: red;">PROTOCOLO MATUTINO</span> PUEDE REALMENTE HACERTE PERDER <span style="color: red;">10 KILOS EN 21 DÍAS</span>?</p></b></h3>
+          <div class="aviso-template">
+            <p>HAZ CLIC EN LA PRESENTACIÓN Y ENTIENDE.</p>
+          </div>
+          <div id="vid_64e2b2f7e1c7560009bccfca" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64e2b2f7e1c7560009bccfca" src="https://images.converteai.net/ef34942d-b70b-439c-922c-3aa7c514f80b/players/64e2b2f7e1c7560009bccfca/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64e2b2f7e1c7560009bccfca" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64e2b2f7e1c7560009bccfca">var s=document.createElement("script");s.src="https://scripts.converteai.net/ef34942d-b70b-439c-922c-3aa7c514f80b/players/64e2b2f7e1c7560009bccfca/player.js",s.async=!0,document.head.appendChild(s);</script>
+            <p><span id="numero-assistindo">213</span> personas están viendo ahora.</p>
+         </div>
+        </div>
+        <div id="cta1" class="mt-4 d-none">
+    <a href="" class="btn-roxo" style="background-color: orange;">
+      <span class="span-btn">QUIERO UNIRME</span>
+      <span class="span-btn2"></span>
+    </a>
+  </div>
+  <script>
+  // Função para exibir o botão após 1380 segundos
+      setTimeout(function() {
+        document.getElementById("cta1").classList.remove("d-none");
+      }, 1380000); // 1380 segundos em milissegundos
+    </script>
+    </div>
+  </header>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./assets/js/com.js"></script>
+</body>
+</style>
+<div id="division-bSoJGo5853747" class="bMFJBJ9016529">
+<style>.px-1{padding-left:4px;padding-right:4px}.pt-0.5{padding-top:2px}.mt-4{margin-top:16px}@media (min-width:640px){.sm\:text-sm{font-size:14px;line-height:20px}}.mt-2{margin-top:8px}.mb-2{margin-bottom:8px}.flex{display:flex}.w-full{width:100%}.space-x-1>:not([hidden])~:not([hidden]){margin-left:.25rem}.items-center{align-items:center}.font-\[Helvetica\]{font-family:Helvetica,Arial,sans-serif}.cursor-pointer{cursor:pointer}.rounded-full{border-radius:99999px}.h-12{height:48px}.w-12{width:48px}.flex-col{flex-direction:column}.py-1{padding-top:4px;padding-bottom:4px}.px-3{padding-left:12px;padding-right:12px}.pl-0\.5,.px-0\.5{padding-left:2px}.rounded-\[18px\]{border-radius:18px}.bg-stone-100{background-color:#f5f5f4}.px-0\.5{padding-right:2px}.font-semibold{font-weight:600}.text-\[\#365899\]{color:#365899}.text-\[13px\]{font-size:13px}.leading-4{line-height:16px}.hover\:underline:hover{text-decoration-line:underline}.text-sm{font-size:14px}.relative{position:relative}.justify-between{justify-content:space-between}.grow{flex-grow:1}.text-xs{font-size:12px}.text-\[\#90949c\]{color:#90949c}.ml-px{margin-left:1px}.gap-1{gap:4px}.w-fit{width:fit-content}.hidden{display:none}.-mt-1{margin-top:-4px}.-mt-2{margin-top:-8px}.mr-2{margin-right:8px}.h-4,.h-5{height:16px}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));filter:var(--tw-drop-shadow)}.bg-slate-50{background-color:#f8fafc}.py-0\.5{padding-top:2px;padding-bottom:2px}.pr-1{padding-right:4px}.block{display:block}.w-4{width:16px}.z-10{z-index:10}.-ml-1{margin-left:-4px}.ml-4{margin-left:16px}.gap-x-0\.5{column-gap:2px}.mr-0\.5{margin-right:2px;margin-left:2px}.border-l{border-left-width:1px}.border-slate-300{border-color:#cbd5e1}.border-dotted{border-style:dotted}.ml-5{margin-left:20px}.h-8{height:32px}.w-8{width:32px}.h-10{height:40px}.w-10{width:40px}@media (min-width:640px){.sm\:w-16{width:64px}.sm\:ml-12{margin-left:48px}}.pl-2{padding-left:8px}</style>
+<div class="fbComments-nePoMc4912814"style="margin-left:auto;margin-right:auto">
+</style>
+<div id="testimonials" class="fbComments-nePoMc4912814-element">
+<p class="text-xs sm:text-sm leading-4 font-semibold mb-2">
+Mostrando 12 comentarios
+</p>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/npcDgs9331535.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Martina Gómez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Al principio no creía, pero cuando me di cuenta de que estaba perdiendo peso, me puse muy feliz. ¡Perdí un poco más de 10 kilos en exactamente 21 días!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+59
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/EMlDaY9344201.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Francisca Hernández
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Siempre intenté de todo para adelgazar y no tenía éxito, ¡finalmente lo logré!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+28
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/wsgPSX9374883.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Yasmin Affonso
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Mi vida ahora es otra!! Mi marido super me elogia y ahora yo no tengo más vergüenza de usar algunos pantalones ajustados.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+64
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/qyepjF9408122.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Camila Muñoz
+</p>
+<p class="text-sm leading-4 pt-0.5">
+¡Ahora entiendo la razón por la cual siempre vuelvo a engordar! ¡Esta presentación lo explica todo!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+50
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/hqLdXJ9444704.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Valentina Rojas
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Al principio no creía, pero cuando me di cuenta de que estaba perdiendo peso, me puse muy feliz. ¡Perdí un poco más de 10 kilos en exactamente 21 días!😘😘😘
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+64
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/YYFJDK9470941.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Antonia Jimenez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+¡Maravilloso! Ya lo estoy aplicando y está funcionando. Las explicaciones fueron muy claras, entendí perfectamente... 🥰
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+51
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/IRhHDl9503445.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Sofía Pérez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Ahora estoy saludable, uso la ropa que quiero y estoy muy orgullosoa de mí misma
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+88
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/DHwuEn9534560.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Rebeca Benítez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Mi esposo no para de elogiarme, ahora cuando viajamos a la playa, ya no siento vergüenza de mí misma. 😍😍😍
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+64
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/NEcaeA9570154.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Catalina Sanchez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+He perdido 4kgs en una semana y estoy realmente feliz.... solo 3kgs más y volveré al peso que tenía a los 20 años! Sin esas dietas locas, me siento mucho mejor, más fuerte, sin somnolencia después del almuerzo, ya no necesito cremas hidratantes, ni siquiera para la cara. Se lo dije a mis amigas hoy. 🙏🙏🙏🙏🙏🙏
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+19
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/nujYcz9626467.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Rebeca Benítez
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Comencé hace una semana y ya he eliminado más de 3 kilos, ¡estoy amando mucho! 🥰
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+47
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/BHyIkG9651205.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Mónica Flores
+</p>
+<p class="text-sm leading-4 pt-0.5">
+¡Me alegra haberlo visto hasta el final! 🙏
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+43
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/format:auto/u/CwiDfgH3YWbrEUqFBB8kMwbrAss2/l/IudPNB9683499.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Verónica Alicia
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Usted me hicieron economizar mucho tiempo y dinero con estos entrenamientos revelados, chicaaaa solo tengo que agradecerte.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Me gusta
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+78
+</span>
+</div>
+</div>
+</div>
+<p class="text-xs sm:text-sm leading-4 font-semibold mt-4" style="color:#555;text-align:center;">
+Debes iniciar sesión para dejar un comentario.
+</p>
+</div>
+<div style="text-align: center; padding: 20px; background-color: red; color: white;">
+    <p>Todos los derechos reservados - Copyright 2023</p>
+    <p>
+  </div>
+</div>
+</div>
+<div class="division-vmINaY0103637__wrapper">
+  </div>      
+   </div>
+  </div>
+  </header>
+</html>
+
