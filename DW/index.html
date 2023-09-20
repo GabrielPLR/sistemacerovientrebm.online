@@ -59,7 +59,19 @@
 
 <p class="lead">Haz clic en el botón "Agregar a mi pedido"...</p>
 
-<p class="lead">AGREGAR A MI PEDIDO</p>
+<div id="cta"> <!-- HOTMART - Upsell Widget -->
+<div id="box_hotmart"></div>
+<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+
+<script>
+opts = {
+key: 'USL-110587-341500-894af8fb1fd50f9ad40f25fb44ad3292',
+width: '650' ,
+height: '420'
+};
+Upsell.Widget.show(opts);
+</script>
+<!-- HOTMART - Upsell Widget [end] -->
 
 <p class="lead">Y comienza de inmediato a deshacerte de la piel flácida y las estrías.</p>
 
@@ -76,21 +88,6 @@
         </div>
       </div>
     </div>
-
-
-     <!-- HOTMART - Upsell Widget -->
-<div id="box_hotmart"></div>
-<script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
-
-<script>
-opts = {
-key: 'USL-110587-341500-894af8fb1fd50f9ad40f25fb44ad3292',
-width: '650' ,
-height: '420'
-};
-Upsell.Widget.show(opts);
-</script>
-<!-- HOTMART - Upsell Widget [end] -->
 
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
